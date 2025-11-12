@@ -1,5 +1,5 @@
 import cv2
-path=r"C:\Users\IT-Admin\Downloads\wp6809345.jpg"
+path=r"Resources\Lenna.png"
 img=cv2.imread(path)
 img=cv2.resize(img,(640,480))
 # img1=cv2.imread(path,0)#convert to grayscale
@@ -9,6 +9,6 @@ img=cv2.resize(img,(640,480))
 grayimg=cv2.cvtColor(img,cv2.COLOR_BGR2GRAY)
 blur=cv2.GaussianBlur(img,(5,5),0)
 cv2.imshow( "GaussianBlur",blur)
-# cv2.imshow("GrayScale",grayimg)
+cv2.imshow("GrayScale",grayimg)
 cv2.waitKey(0)
-cv2.destroyAllWindows()git i
+cv2.destroyAllWindows()
